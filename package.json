@@ -1,8 +1,10 @@
 {
   "name": "vue-blaze-slider",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.1",
   "description": "Vue 3 integration for Blaze Slider, an high performance slider library.",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/vue-blaze-slider.umd.js",
   "module": "dist/vue-blaze-slider.es.js",
   "types": "dist/types/index.d.ts",
