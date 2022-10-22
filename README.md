@@ -4,7 +4,7 @@
 
 ## Usage
 
-1. `npm install vue-blaze-slider blaze-slider`
+1. `npm install vue-blaze-slider`
 2. In your `.vue` component:
 
 ```vue
@@ -35,9 +35,8 @@
 
 <script setup lang="ts">
 import { BlazeSlider, BlazeSlide, BlazePagination } from "vue-blaze-slider";
-// CSS imports are important for basic usage, do not skip this part.
-// It comes with minimal styling, you can override it with your own.
-import "blaze-slider/dist/blaze.css";
+// CSS import is important for basic usage, do not skip this part or it won't work.
+// You can easily extend the default styles.
 import "vue-blaze-slider/dist/style.css";
 </script>
 ```
