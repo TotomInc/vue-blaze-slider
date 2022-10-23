@@ -49,6 +49,43 @@ import "vue-blaze-slider/dist/style.css";
 | ---- | ---- | ------- | ----------- |
 | `options` | `BlazeConfig` | `undefined` | Blaze Slider configuration. [See all available properties from official Blaze Slider documentation](https://blaze-slider.dev/docs/api/BlazeConfig). |
 
+## Composables
+
+### `useBlazeSlider`
+
+A composable to create a Blaze Slider instance. Gives you a better control over the DOM if necessary compared to the component-based approach.
+
+You need to create the necessary HTML markup yourself [as specified on the Blaze Slider setup page](https://blaze-slider.dev/docs/Tutorial/setup).
+
+#### Usage
+
+```vue
+<template>
+  <div ref="sliderEl" class="blaze-slider">
+    <div class="blaze-container">
+      <div class="blaze-track-container">
+        <div class="blaze-track">
+          <div>slide 1</div>
+          <div>slide 2</div>
+          <div>slide 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+
+import "vue-blaze-slider/dist/style.css";
+
+import { useBlazeSlider } from "vue-blaze-slider";
+
+const sliderEl = ref<HTMLDivElement | null>(null);
+const slider = useBlazeSlider(sliderEl);
+</script>
+```
+
 ## License
 
 See [LICENSE](LICENSE).
