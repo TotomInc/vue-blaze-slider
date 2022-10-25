@@ -43,6 +43,6 @@
     "vue-tsc": "^1.0.8"
   },
   "dependencies": {
-    "blaze-slider": "^1.4.0"
+    "blaze-slider": "^1.7.1"
   }
 }
